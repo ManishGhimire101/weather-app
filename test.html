@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* The container that holds all post divs */
+      ul {
+        width: 350px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        padding: 0;
+      }
+
+      .top h1,
+      p {
+        color: white;
+      }
+      .buttom {
+        background-color: white;
+        color: black;
+        width: 350px;
+        display: flex;
+        align-items: center;
+
+        justify-content: space-between;
+      }
+      .buttom div,
+      p {
+        margin: 0;
+        padding: 10px;
+
+        color: black;
+      }
+
+      /* Each post card */
+      .cart .top {
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        color: white;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+      }
+      div ul li {
+        list-style: none;
+      }
+      button {
+        padding: 10px;
+        margin: 5px;
+        background-color: rgb(8, 255, 8);
+        border: 2px solid black;
+        border-radius: 9px;
+      }
+      button:hover {
+        background-color: rgb(10, 196, 10);
+      }
+      .center {
+        text-align: center;
+        margin-top: 20px;
+      }
+      input {
+        padding: 5px;
+        border-radius: 11px;
+        border: 2px solid black;
+      }
+      ul .icon {
+        font-size: 60px;
+      }
+      .cart {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: repeat(2, 1fr); */
+        gap: 8px;
+      }
+      .icon img {
+        width: 100px;
+        height: 100px;
+      }
+      .search img {
+        width: 30px;
+        height: 30px;
+      }
+      
+      #input {
+        padding: 12px 15px;
+        border-radius: 25px;
+        border: 2px solid #0072ff;
+        font-size: 16px;
+        width: 250px;
+        outline: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 114, 255, 0.1);
+      }
+
+      input#input:focus {
+        border-color: #00c6ff;
+        box-shadow: 0 4px 12px rgba(0, 114, 255, 0.3);
+        width: 300px;
+      }
+
+      input#input::placeholder {
+        color: #999;
+        font-style: italic;
+      }
+
+      
+      button {
+        padding: 12px 25px;
+        margin: 8px;
+        background: linear-gradient(135deg, #00c6ff, #0072ff);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 114, 255, 0.3);
+      }
+
+      button:hover {
+        background: linear-gradient(135deg, #0072ff, #00c6ff);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 114, 255, 0.5);
+      }
+
+      button:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 5px rgba(0, 114, 255, 0.3);
+      }
+
+     
+      .center {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .center h1 {
+        color: #0072ff;
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .center div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Weather app</h1>
+      <input type="text" id="input" placeholder="Search weather..." />
+      <button onclick="getInput()">Search</button>
+      <button onclick="getLocate()">locate me</button>
+    </div>
+    <div class="cart" id="cart1"></div>
+    <div class="cart" id="cart2"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
