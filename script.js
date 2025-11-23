@@ -46,7 +46,7 @@ function fetchWeather(lat, lon) {
           <p> ${data.weather[0].description}</p>
           </div>
           <div class="search">
-          <img src="https://img.icons8.com/?size=100&id=59878&format=png&color=000000" alt="search icon">
+          <img src="https://img.icons8.com/?size=100&id=59878&format=png&color=228BE6" alt="search icon">
           </div>
           </div>
           
@@ -112,7 +112,7 @@ function showWeather() {
           <p> ${data.weather[0].description}</p>
           </div>
           <div class="search">
-          <img src="https://img.icons8.com/?size=100&id=59878&format=png&color=000000" alt="search icon">
+          <img src="https://img.icons8.com/?size=100&id=59878&format=png&color=228BE6" alt="search icon">
           </div>
           </div>
           
