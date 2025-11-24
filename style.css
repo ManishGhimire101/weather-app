@@ -50,7 +50,7 @@ p {
 
 /* Each post card */
 .cart .top {
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  background:  linear-gradient(300deg, #9ac7ff, #cfe6ff);
   color: white;
   padding: 20px;
   display: grid;
