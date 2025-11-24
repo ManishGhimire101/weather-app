@@ -206,6 +206,7 @@ body {
   margin: auto;
   margin: 10px;
   padding: 20px;
+  place-content: center;
 }
 
 /* LEFT PANEL */
@@ -310,5 +311,11 @@ body {
 @media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  
+  .weather-icon {
+    margin-top: 20px;
   }
 }
