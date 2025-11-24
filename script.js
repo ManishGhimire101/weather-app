@@ -74,7 +74,7 @@ function fetchWeather(lat, lon) {
       uvIndex.innerHTML = data.main.pressure;
       description.innerHTML = data.weather[0].description;
     
-     
+      document.getElementById("input").value = "";
     })
     .catch((error) => {
       console.error("Error:", error);
@@ -170,3 +170,4 @@ function getData(element) {
   
   fetchWeather(lat, lon);
 }
+
