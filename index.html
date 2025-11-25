@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="center">
-      <h1>Weather app</h1>
-      <input type="text" id="input" placeholder="Search weather..." />
-      <button class="button" onclick="getInput()">Search</button>
-      <button class="button" onclick="getLocate()">locate me <img src="https://www.svgrepo.com/show/513213/location-pin.svg" width="13px"  alt="location"></button>
-    </div>
+    <header>
+      <nav>
+        <div class="nav-bar">
+          <h1 class="logo">Weather App</h1>
 
-    <div class="container">
+          <div class="search-area">
+            <input type="text" id="input" placeholder="Search weather..." />
+            <button class="button" onclick="getInput()">Search</button>
+            <button class="button" onclick="getLocate()"><img src="https://www.svgrepo.com/show/513213/location-pin.svg" width="13px"  alt="location"></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+   
+
+    <div class="container" id="main">
       <!-- LEFT -->
       <div class="forecast-card">
         <h3>7-Day Forecast</h3>

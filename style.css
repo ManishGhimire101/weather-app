@@ -1,33 +1,62 @@
+/* Nav Bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 15px;
+
+  align-items: center;
+
+  color: black;
+  box-shadow: 0 2px 8px rgba(40, 41, 43, 0.1);
+  margin-bottom: 10px;
+}
+.logo {
+  color: rgb(20, 163, 247);
+}
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #input {
+    width: 150px !important;
+    justify-content: center;
+  }
+  #input:focus {
+    width: 160px !important;
+  }
+}
 /* landing page */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 ul {
   width: 350px;
- 
+
   padding: 0;
-  
 }
 ul:hover {
-
   transform: translateY(-2px);
   cursor: pointer;
-  
 }
-.top{
+.top {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-
 }
-.buttom{
+.buttom {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-
 }
 
 .top h1,
@@ -50,7 +79,7 @@ p {
 
 /* Each post card */
 .cart .top {
-  background:  linear-gradient(300deg, #9ac7ff, #cfe6ff);
+  background: linear-gradient(300deg, #9ac7ff, #cfe6ff);
   color: white;
   padding: 20px;
   display: grid;
@@ -61,7 +90,6 @@ p {
 .cart ul li {
   list-style: none;
 }
-
 
 .center {
   text-align: center;
@@ -104,7 +132,7 @@ ul .icon {
 
 input#input:focus {
   border-color: #00c6ff;
-  box-shadow: 0 4px 12px rgba(0, 114, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
 
@@ -160,24 +188,33 @@ input#input::placeholder {
 }
 .search-btn {
   background-color: white;
-  border: none
+  border: none;
 }
-.search-btn:hover{
+.search-btn:hover {
   transform: translateY(-2px);
   cursor: pointer;
-  
 }
-
 
 .search {
   padding-right: 20px;
-  ;
 }
 @media (max-width: 425px) {
   .cart {
     grid-template-columns: repeat(1, 1fr);
 
     place-items: center;
+  }
+  .nav-bar {
+    flex-direction: column;
+    gap: 15px;
+   
+  }
+  .weather-icon img{
+    width: 80px;
+    height: 80px;
+  }
+  .temp {
+    font-size: 48px !important;
   }
   body {
     width: 100%;
@@ -314,7 +351,6 @@ body {
   }
 }
 @media (max-width: 600px) {
-  
   .weather-icon {
     margin-top: 20px;
   }

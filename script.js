@@ -169,5 +169,10 @@ function getData(element) {
   const lon = parseFloat(element.dataset.longitude);
   
   fetchWeather(lat, lon);
+  
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 }
 
